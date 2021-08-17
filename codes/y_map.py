@@ -36,15 +36,18 @@ x_ticks = ['-10', '-5', '0', '5', '10' ]
 y_ticks = ['-10', '-5', '0', '5', '10' ]
 t11 = [0,175,350,525,699]
 
-plt.xticks(ticks=t11, labels=x_ticks, size='small')
-plt.yticks(ticks=t11, labels=y_ticks, size='small')
+plt.xticks(ticks=t11, labels=x_ticks, size=7)
+plt.yticks(ticks=t11, labels=y_ticks, size=7)
 
 norm = TwoSlopeNorm(vmin=data.min(), vcenter=0, vmax=data.max())
 pc = plt.pcolormesh(data, norm=norm, cmap="seismic")
 plt.imshow(data, cmap = 'seismic')
-plt.colorbar(pc)
-plt.xlabel("degrees")
-plt.ylabel("degrees")
-plt.title("y map in MILCA")
-plt.savefig("../images/figure 1.png", dpi = 400)
+#plt.colorbar(pc)
+cbar = plt.colorbar()
+for t in cbar.ax.get_yticklabels():
+     t.set_fontsize(7)
+plt.xlabel("degrees",fontsize=8)
+plt.ylabel("degrees",fontsize=8)
+#plt.title("MILCA y map of Coma",fontsize=8)
+plt.savefig("../images/figure 1.png", dpi = 600)
 plt.show()

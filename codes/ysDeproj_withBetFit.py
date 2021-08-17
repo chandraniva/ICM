@@ -112,7 +112,7 @@ plt.plot(rmid[idx_plot]*arcmin2kpc, beta_fit[idx_plot], label = 'Beta-model fit 
 plt.legend(loc='best')
 plt.xlabel("Distance from centre of cluster (kpc)" ,fontsize=11)
 plt.ylabel("Average deprojected y profile" ,fontsize=11)
-plt.title("Deprojected y profile in bins of 3 arcmin", fontsize=13)
+#plt.title("Deprojected y profile in bins of 3 arcmin", fontsize=13)
 plt.loglog()
 plt.savefig("../images/deprojected ys.png",dpi=400)
 plt.show()

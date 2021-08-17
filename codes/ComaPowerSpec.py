@@ -65,6 +65,8 @@ t11 = [0,35,70,105,138]
 plt.xticks(ticks=t11, labels=x_ticks, size='small')
 plt.yticks(ticks=t11, labels=y_ticks, size='small')
 plt.imshow(mask, interpolation='nearest', origin='lower')
+plt.xlabel("degrees")
+plt.ylabel("degrees")
 plt.colorbar()
 plt.savefig("../images/Apodized mask.png",dpi = 400)
 plt.show()
