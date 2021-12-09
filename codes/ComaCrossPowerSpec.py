@@ -150,6 +150,10 @@ plt.title("Cross Power Spectrum of normalised map")
 plt.savefig("../images/power_spectrum (cross).png", dpi = 400)
 plt.show()
 
+np.savetxt("../data/lambda_inv2.txt",lambdas_inv)
+np.savetxt("../data/amp_cross.txt",amp)
+np.savetxt("../data/amp_err_cross.txt",std_amp)
+
 print("\n---------------------------- PARSEVAL CHECK ---------------------------------\n")
 
 # NOT YET WORKING! Refer to test_parseval.py
