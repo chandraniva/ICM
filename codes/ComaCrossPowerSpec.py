@@ -176,7 +176,7 @@ for i in range(500,2000):
 
 plt.figure()
 plt.errorbar(lambdas_inv,amp_pressure[0], yerr=std_amp*(k/Ns[0]/np.pi)**(1/2), fmt='r.',ecolor='black',elinewidth=1,
-            capsize = 4,label="theta = 0 kpc")
+            capsize = 4,label="theta = 500 kpc")
 # plt.errorbar(lambdas_inv+1e-5,amp_pressure[500], yerr=std_amp*(k/Ns[500]/np.pi)**(1/2), fmt='b.',ecolor='black',elinewidth=1,
 #              capsize = 4,label="theta = 1000 kpc")
 plt.errorbar(lambdas_inv+2e-5,amp_pressure[1000], yerr=std_amp*(k/Ns[1000]/np.pi)**(1/2), fmt='g.',ecolor='black',elinewidth=1,
